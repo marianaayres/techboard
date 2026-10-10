@@ -1,0 +1,140 @@
+
+/*Definição de fontes*/
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("../css/Unbounded/Unbounded-VariableFont_wght.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../css/Poppins/Poppins-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*Reset*/
+
+*{  
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Novo: nenhuma imagem passa da largura do pai*/
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*Estilização do corpo da página*/
+
+body{
+    background-color: #0E1014;
+    color: #FFFFFF;
+}
+
+header img{ 
+    display: block;
+    margin: 10px 0 0 10px;
+}
+
+
+h1{
+
+    font-size: 64px;
+    font-family: "Unbounded", sans-serif; 
+    text-align: center;
+    margin: 0 0 5px 0;
+}
+h1 span{
+    color:#9747FF
+}
+p{
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    max-width: 792px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 0 auto 0;
+
+}
+
+a{
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    text-decoration: none; 
+    background-color: #9747FF;
+    width: 340px;
+    height: 66px;
+    display: block;
+    text-align: center;
+    line-height: 66px;
+    border-radius: 36px;
+    margin: 10px auto;
+
+}
+
+a:hover{
+    background-color: #8233E8;
+}
+
+section img{
+    display: block;
+    width: 100%;
+    max-width: 792px;
+    aspect-ratio: 792/446;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    
+    header img{
+        margin: 65px 0 0 24px;
+    }
+
+    h1{
+        font-size: 48px;
+    }
+
+    p{
+        width: 648px;
+    }
+}
+
+@media (max-width:480px) {
+
+    header img {
+        margin: 32px 0 0 16px;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+        max-width: 340px;
+        padding: 0;
+
+    }
+
+    a {
+        font-size: 20px;
+        width: 251px;
+    }
+
+    section img {
+        width: 340px;
+        height: 230px;
+    }
+}
